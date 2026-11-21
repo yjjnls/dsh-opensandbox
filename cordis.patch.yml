@@ -1,0 +1,8 @@
+# dsh-opensandbox bundle layer: this file ships inside the npm package and is
+# applied when the package is registered as a profile bundle
+# (`dsh plugin --profile web add dsh-opensandbox`). It mounts the OpenSandbox
+# shell executor; the plugin's Config (baseUrl, accessToken, cwd, timeoutMs,
+# maxTimeoutMs, maxOutputBytes) is set from cordis.yml.
+- insert:
+    - id: opensandbox-shell
+      name: dsh-opensandbox
